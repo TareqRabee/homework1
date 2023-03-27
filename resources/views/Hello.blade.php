@@ -7,12 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hello, {{$name}}!</p>
-    
-    <form action="/about" method="post">
-        @csrf
-        <input type="text" name="name">
-        <input type="submit" value="Submit">
-    </form>
+    <p>Hello World!</p>
+    <p>{{$data}}</p>
 </body>
 </html>

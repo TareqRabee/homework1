@@ -7,12 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hello, {{$name}}!</p>
-    
-    <form action="/about" method="post">
-        @csrf
-        <input type="text" name="name">
-        <input type="submit" value="Submit">
-    </form>
+    <h1>Tasks</h1>
+    <ul>
+        @foreach ($tasks as $task)
+            <li>{{$task->name}}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
