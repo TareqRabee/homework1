@@ -41,3 +41,7 @@ Route::get('/tasks-db', function () {
     $tasks  = DB::table('tasks')->get();
     return view('TasksDB', compact('tasks'));
 });
+Route::get('/taskslab4', function () {
+    $tasks  = DB::table('tasks')->get();
+    return view('lab4', compact('tasks'));
+});
